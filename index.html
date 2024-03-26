@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="start.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <title>tic tac toe</title>
+</head>
+<body>
+    <div id="startScreen">
+        <h1 id="head">Tic Tac Toe</h1>
+        <h3 id="secHead">Choose a Mode</h3>
+        <button id="pvp" >Player vs Player</button>
+
+        <button id="mainButton"
+         onclick="revealButtons()">Player vs AI</button>
+        <div id="modeContainer" class="pop-up">
+            <button id="pva">Easy</button>
+            <button id="hardMode">Hard</button>
+            </div>
+       
+
+        <button id="socialBtn" 
+        onclick = "revealSocials()">More</button>
+            <div id="socialContainer" class="pop-up">
+            <button id="insta"><i class="fa-brands fa-square-instagram"></i></button>
+            <button id="github"><i class="fa-brands fa-square-github"></i></button>
+            <button id="twitter"><i class="fa-brands fa-x-twitter"></i></button>
+            <button id="linkedin"><i class="fa-brands fa-linkedin"></i></button>
+       </div>
+    </div>
+</body>
+<script>
+function revealButtons() {
+  document.getElementById("mainButton").style.display = "none";
+  document.getElementById("pva").style.display = "block";
+  document.getElementById("modeContainer").style.display = "flex";
+  document.getElementById("hardMode").style.display = "block";
+}
+function revealSocials() {
+  document.getElementById("socialBtn").style.display = "none";
+  document.getElementById("socialContainer").style.display = "flex";
+  document.getElementById("insta").style.display = "block";
+  document.getElementById("github").style.display = "block";
+  document.getElementById("twitter").style.display = "block";
+  document.getElementById("linkedin").style.display = "block";
+}
+</script>
+<script src="start.js"></script>
+</html>

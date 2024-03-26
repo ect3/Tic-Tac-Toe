@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#mainButton {
+  display: block;
+}
+#button1, #button2 {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<button id="mainButton" onclick="revealButtons()">Click Me!</button>
+
+<button id="button1">Button 1</button>
+<button id="button2">Button 2</button>
+
+<script>
+function revealButtons() {
+  document.getElementById("mainButton").style.display = "none";
+  document.getElementById("button1").style.display = "block";
+  document.getElementById("button2").style.display = "block";
+}
+</script>
+
+</body>
+</html>

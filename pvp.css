@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#gameScreen{
+    padding: 10px;
+}
+
+body{
+    background: linear-gradient(90deg,#192734,#15202b);
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow:  1px 1px 3px black;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+}
+
+#parentContainer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#container{
+    flex-wrap: wrap;
+    margin-top: 60px;
+    height: 60vmin;
+    width: 60vmin;
+    display: flex; 
+    justify-content: space-evenly; 
+    position: relative;
+}
+
+.boxp{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: .3rem;
+    border: 2px solid #22303c;
+    box-shadow:  1px 1px 8px rgb(0, 0, 0);
+    font-size: 7vmin;
+    background-color: #ffff;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    padding: 5px;
+    position: relative;
+}
+
+.boxp:hover{
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+}
+
+#BtnBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+#NewGame, #BackBtn{
+   width: 120px;
+   background: linear-gradient(150deg,#15202b,#192734);   
+   border: 2px solid #22303c;
+   height: 50px;
+   border-radius: 30px;
+   color: rgb(255, 255, 255);
+   box-shadow: 1px 1px 4px black;
+   cursor: pointer;
+   text-shadow:  1px 1px 1.5px black;
+   font-size: 15px;
+   font-weight: 900;
+   font-family: Arial, Helvetica, sans-serif;
+} 
+
+#NewGame:hover,#BackBtn:hover{
+    background: linear-gradient(90deg,#192734,#15202b);
+    opacity: .9;
+    border: solid #111927;
+}
+
+.msg-container{
+    font-size: 60px;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px black;
+    -webkit-text-stroke: .5px rgb(136, 136, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    z-index: 1;
+    position: absolute;
+    margin-top: 10%;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes pop-up {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pop-up{
+    animation: pop-up 0.3s ease;
+}
+
+#line {
+    height: 4px; 
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+}
+
+
