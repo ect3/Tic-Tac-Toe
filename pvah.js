@@ -60,6 +60,7 @@ const aiTurn = () => {
             else if(pos2Val == "") selectedBox = boxes[pattern[1]];
             else if(pos3Val == "") selectedBox = boxes[pattern[2]];
             selectedBox.innerText = "X";
+            aiAudio.play();
             selectedBox.style.color = "red";
             moveFound = true;
             break;
@@ -76,6 +77,7 @@ const aiTurn = () => {
                 else if(pos2Val == "") selectedBox = boxes[pattern[1]];
                 else if(pos3Val == "") selectedBox = boxes[pattern[2]];
                 selectedBox.innerText = "X";
+                aiAudio.play();
                 selectedBox.style.color = "red";
                 moveFound = true;
                 break;
@@ -86,6 +88,7 @@ const aiTurn = () => {
         const randomIndex = Math.floor(Math.random() * emptyBoxes.length);
         selectedBox = emptyBoxes[randomIndex];
         selectedBox.innerText = "X";
+        aiAudio.play();
         selectedBox.style.color = "red";
     }
     
