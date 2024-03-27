@@ -20,7 +20,7 @@ const winPatterns = [
     [3, 4, 5],
     [6, 7, 8],
 ];
-
+aiAudio.preload = 'auto';
 let turn0 = true;
 
 // Function to handle player's turn
