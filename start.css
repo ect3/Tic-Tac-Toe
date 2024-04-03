@@ -50,7 +50,7 @@ body {
 
 #pvp {
     margin-top: 30px;
-    font-size: 13px;
+    font-size: 10px;
     width: 130px;
     height: 30px;
     background: linear-gradient(150deg,#15202b,#192734);
@@ -74,7 +74,7 @@ body {
 /* this is player vs ai button */
 #mainButton {
     margin-top: 20px;
-    font-size: 13px;
+    font-size: 10px;
     width: 130px;
     height: 30px;
     background: linear-gradient(70deg,#15202b,#192734);
@@ -84,7 +84,7 @@ body {
     padding: 2px;
     cursor: pointer;
     border-radius: 30px;
-    font-weight: 800;
+    font-weight: 600;
     box-shadow: 2px 2px 6px  rgba(0, 0, 0, .6);
     display: block;
     justify-content: center;
@@ -135,7 +135,7 @@ body {
 
 #socialBtn {
     margin-top: 20px;
-    font-size: 13px;
+    font-size: 10px;
     width: 130px;
     height: 30px;
     background: linear-gradient(150deg,#15202b,#192734);
@@ -144,7 +144,7 @@ body {
     border: 2px solid #22303c;
     cursor: pointer;
     border-radius: 30px;
-    font-weight: 800;
+    font-weight: 600;
     box-shadow: 2px 2px 6px  rgba(0, 0, 0, .6);
     display: block;
     justify-content: center;
