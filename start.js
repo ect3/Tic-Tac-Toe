@@ -29,7 +29,7 @@ document.querySelectorAll('button').forEach(button => {
             insta: "https://www.instagram.com/ninz_ect",
             github: "https://github.com/ect3",
             twitter: "https://twitter.com/ninz_ect",
-            linkedin: "https://www.linkedin.com/in/ninz-ect-823026291"
+            linkedin: "https://www.linkedin.com/in/ninz-ect"
         };
 document.getElementById('insta').addEventListener('click', function() {
             window.open(socialLinks.insta, '_blank');
